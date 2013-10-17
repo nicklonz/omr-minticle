@@ -7,6 +7,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'railties', '~> 4.0.1.rc1'
 gem 'jbuilder', '~> 1.2'
   # bundle exec rake doc:rails generates the API under doc/api.
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
