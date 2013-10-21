@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '1.9.3'
 
 gem 'rails', '~> 4.0.1.rc1'
 gem 'sass-rails', '~> 4.0.0'
@@ -10,8 +10,8 @@ gem 'turbolinks'
 gem 'railties', '~> 4.0.1.rc1'
 gem 'activesupport', '~> 4.0.1.rc1'
 gem 'jbuilder', '~> 1.2'
-  # bundle exec rake doc:rails generates the API under doc/api.
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'devise', '~> 3.1.1'
 
 group :development, :test do
 			gem 'sqlite3', '~> 1.3.8'
