@@ -1,0 +1,27 @@
+<h1>Listing minticles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @minticles.each do |minticle| %>
+      <tr>
+        <td><%= minticle.description %></td>
+        <td><%= link_to 'Show', minticle %></td>
+        <td><%= link_to 'Edit', edit_minticle_path(minticle) %></td>
+        <td><%= link_to 'Destroy', minticle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Minticle', new_minticle_path %>
