@@ -1,29 +1,40 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
 
-gem 'rails', '~> 4.0.1.rc1'
-gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'railties', '~> 4.0.1.rc1'
-gem 'activesupport', '~> 4.0.1.rc1'
-gem 'jbuilder', '~> 1.2'
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
-gem 'devise', '~> 3.1.1'
-
-group :development, :test do
-			gem 'sqlite3', '~> 1.3.8'
-end
+gem 'rails', '3.2.13'
 
 group :production do
-			gem 'pg'
-			gem 'rails_12factor'
-end						
-
-group :doc do
-  gem 'sdoc', require: false
+  gem 'rails_12factor'
+  gem 'pg'
 end
 
+group :development do
+  gem 'sqlite3'
+end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails','~> 4.0'
+  gem 'database_cleaner'
+end
+
+group :assets do
+
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'bootstrap-sass', '~> 2.3.1.0'
+  gem 'uglifier', '>= 1.0.3'
+end
+
+  gem 'jquery-rails'
+  gem 'faker'
+  gem 'devise'
+  gem 'cancan'
+  gem 'redcarpet'
+  gem 'carrierwave'
+  gem 'mini_magick'
+  gem 'fog'
+  gem 'figaro'
+  gem 'will_paginate', '~> 3.0'
+  gem 'omniauth-facebook'
+  gem 'mercury-rails'
+  gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
